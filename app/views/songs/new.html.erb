@@ -8,7 +8,7 @@
   <%= f.text_field :artist_name %>
   <br />
   <%= f.collection_select (:song, :genre_id, Genre.find(:all),
-                  :id, :name_with_initial,
+                  :id, :name,
                  {:prompt => 'Please select the author of this post'})%>
   <input name="song[note_ids][]">
 
