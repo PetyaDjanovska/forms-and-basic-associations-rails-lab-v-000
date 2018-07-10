@@ -8,7 +8,7 @@
   <%= f.text_field :artist_name %>
   <br />
   <%= f.collection_select :genre_name, Genre.all, :name, :name %>
-  <input name="category[post_ids][]">
+  <input name="song[note_ids][]">
 
   <%= f.submit %>
 <% end %>
