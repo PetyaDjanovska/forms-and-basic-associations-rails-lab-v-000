@@ -31,6 +31,7 @@ class Song < ActiveRecord::Base
     self.notes.each do |note|
       note_contents << note.content if note.content != nil
     end
+    note_contents
   end
 
 
