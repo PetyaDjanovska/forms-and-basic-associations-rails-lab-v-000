@@ -16,7 +16,6 @@ class Song < ActiveRecord::Base
   end
 
   def genre_name
-    byebug
     self.genre ? self.genre.name : nil
   end
 
