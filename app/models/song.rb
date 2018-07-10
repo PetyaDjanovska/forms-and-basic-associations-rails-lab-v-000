@@ -20,7 +20,6 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(ids)
-    byebug
     ids.each do |id|
       note = Notes.find(id)
       self.notes << note
