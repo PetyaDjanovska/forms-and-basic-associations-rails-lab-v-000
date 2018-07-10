@@ -11,7 +11,7 @@ class Song < ActiveRecord::Base
     self.artist ? self.artist.name : nil
   end
 
-  def genre_name=(id)
+  def genre_name=(name)
     self.genre = Genre.find(id)
   end
 
