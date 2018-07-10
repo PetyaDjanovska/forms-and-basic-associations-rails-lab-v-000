@@ -9,7 +9,7 @@
   <br />
   <%= f.collection_select (:song, :genre_id, Genre.find(:all),
                   :id, :name,
-                 {:prompt => 'Please select the author of this post'})%>
+                 {:prompt => 'Please select the genre of this song'})%>
   <input name="song[note_ids][]">
 
   <%= f.submit %>
