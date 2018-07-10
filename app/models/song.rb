@@ -16,6 +16,6 @@ class Song < ActiveRecord::Base
   end
 
   def genre_name
-    self.genre ? self.
+    self.genre ? self.genre.name : nil
   end
 end
