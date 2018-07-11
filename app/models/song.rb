@@ -22,8 +22,7 @@ class Song < ActiveRecord::Base
   def note_contents=(notes)
     notes.each do |note|
       if note.strip != nil
-      note = Notes.find(id)
-      self.notes << note
+      self.notes.build(note)
     end
   end
 
