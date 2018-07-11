@@ -22,6 +22,7 @@ class Song < ActiveRecord::Base
   def note_contents=
     note1 = params[:song_notes_1]
     note2 = params[:song_notes_2]
+    note_contents = [note1, note2]
   end
 
   def note_contents
