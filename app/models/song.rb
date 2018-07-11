@@ -22,7 +22,7 @@ class Song < ActiveRecord::Base
   def note_contents=(notes)
     notes.each do |note|
       if note.strip != nil
-      self.notes.build(:note note)
+      self.notes.build(note: note)
     end
   end
 
